@@ -4,8 +4,6 @@
 
 ///<reference types="react" />
 
-///<reference types="react-intl-1.2.0" />
-
 import * as React from 'react'
 
 import * as reactMixin from 'react-mixin'

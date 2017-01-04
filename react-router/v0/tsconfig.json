@@ -4,19 +4,19 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "react-router": ["react-router/v0"]
+        },
         "noEmit": true,
-        "forceConsistentCasingInFileNames": true,
-
-        "jsx": "react"
+        "forceConsistentCasingInFileNames": true
     },
     "files": [
-        "index.d.ts",
-        "recompose-tests.tsx"
+        "index.d.ts"
     ]
 }

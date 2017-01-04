@@ -4,19 +4,23 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "react-intl": ["react-intl/v1"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true,
 
-        "jsx": "react"
+        "jsx": "react",
+        "experimentalDecorators": true
     },
     "files": [
         "index.d.ts",
-        "recompose-tests.tsx"
+        "react-intl-tests.tsx"
     ]
 }

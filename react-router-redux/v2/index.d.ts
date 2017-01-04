@@ -3,13 +3,12 @@
 // Definitions by: Isman Usoh <http://github.com/isman-usoh>, Noah Shipley <https://github.com/noah79>, Dimitri Rosenberg <https://github.com/rosendi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference types="redux" />
+import * as Redux from "redux";
+import * as History from "history";
+
 /// <reference types="react-router"/>
 
 declare namespace ReactRouterRedux {
-    import R = Redux;
-    import H = HistoryModule;
-
     const TRANSITION: string;
     const UPDATE_LOCATION: string;
 
@@ -20,7 +19,7 @@ declare namespace ReactRouterRedux {
     const goForward: GoBackAction;
     const routeActions: RouteActions;
 
-    type LocationDescriptor = H.LocationDescriptor;
+    type LocationDescriptor = History.LocationDescriptor;
     type PushAction = (nextLocation: LocationDescriptor) => void;
     type ReplaceAction = (nextLocation: LocationDescriptor) => void;
     type GoAction = (n: number) => void;
@@ -34,15 +33,13 @@ declare namespace ReactRouterRedux {
         goForward: GoForwardAction;
         goBack: GoBackAction;
     }
-    interface HistoryMiddleware extends R.Middleware {
-        listenForReplays(store: R.Store<any>, selectLocationState?: Function): void;
+    interface HistoryMiddleware extends Redux.Middleware {
+        listenForReplays(store: Redux.Store<any>, selectLocationState?: Function): void;
         unsubscribe(): void;
     }
 
-    function routeReducer(state?: any, options?: any): R.Reducer<any>;
-    function syncHistory(history: H.History): HistoryMiddleware;
+    function routeReducer(state?: any, options?: any): Redux.Reducer<any>;
+    function syncHistory(history: History.History): HistoryMiddleware;
 }
 
-declare module "react-router-redux" {
-    export = ReactRouterRedux;
-}
+export = ReactRouterRedux;

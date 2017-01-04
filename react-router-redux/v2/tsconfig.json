@@ -4,19 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "react-router-redux": ["react-router-redux/v2"]
+        },
         "noEmit": true,
-        "forceConsistentCasingInFileNames": true,
-
-        "jsx": "react"
+        "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "recompose-tests.tsx"
+        "react-router-redux-tests.ts"
     ]
 }
