@@ -33,7 +33,7 @@ namespace nvd3_test_scatterChart {
 
         nv.utils.windowResize(chart.update);
 
-        chart.dispatch.on('stateChange', function (e) { ('New State:', JSON.stringify(e)); });
+        chart.dispatch.on('stateChange', function (e) { JSON.stringify(e); });
         return chart;
     });
 
