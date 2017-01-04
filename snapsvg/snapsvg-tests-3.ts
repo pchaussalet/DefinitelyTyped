@@ -1,8 +1,6 @@
 //the code in this test file was copied from http://svg.dabbles.info/snaptut-animateframe
 //the author is Ian Brierlay
 
-/// <reference path="snapsvg.d.ts"/>
-
 window.onload=()=>{
 
     var s = Snap("#svgout");
