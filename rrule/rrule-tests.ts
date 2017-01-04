@@ -1,5 +1,3 @@
-/// <reference path="rrule.d.ts" />
-
 import * as RRule from 'rrule';
 
 // Create a rule:

@@ -5,16 +5,21 @@
         "noImplicitAny": true,
         "noImplicitThis": true,
         "strictNullChecks": false,
-        "baseUrl": "../",
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "redux-form": ["redux-form/v4"]
+        },
         "noEmit": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+
+        "jsx": "react"
     },
     "files": [
         "index.d.ts",
-        "rrule-tests.ts"
+        "redux-form-tests.tsx"
     ]
 }
