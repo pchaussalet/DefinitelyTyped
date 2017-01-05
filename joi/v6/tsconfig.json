@@ -3,15 +3,21 @@
         "module": "commonjs",
         "target": "es6",
         "noImplicitAny": true,
+        "noImplicitThis": true,
         "strictNullChecks": false,
         "baseUrl": "../../",
-        "typeRoots": ["../../"],
+        "typeRoots": [
+            "../../"
+        ],
         "types": [],
+        "paths": {
+            "joi": ["joi/v6"]
+        },
         "noEmit": true,
-	"forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "jasmine-1.3-tests.ts"
+        "joi-tests.ts"
     ]
 }
