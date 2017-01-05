@@ -2,7 +2,7 @@
 import mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
-var format = require('util').format;
+import { format } from "util";
 MongoClient.connect('mongodb://127.0.0.1:27017/test', function (err, db) {
     if (err) throw err;
 

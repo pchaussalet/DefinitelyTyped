@@ -1,5 +1,3 @@
-/// <reference path="leaflet-0.7.d.ts" />
-
 // initialize the map on the "map" div with a given center and zoom
 
 var div = document.getElementById('map');

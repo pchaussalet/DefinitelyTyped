@@ -5,17 +5,19 @@
         "noImplicitAny": true,
         "noImplicitThis": true,
         "strictNullChecks": false,
-        "baseUrl": "../",
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "nouislider": ["nouislider/v8"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "mousetrap-tests.ts",
-        "mousetrap-global-bind-tests.ts"
+        "nouislider-tests.ts"
     ]
 }

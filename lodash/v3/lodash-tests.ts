@@ -1,5 +1,3 @@
-/// <reference types="lodash-3.10" />
-
 declare var $: any, jQuery: any;
 
 interface IFoodOrganic {
@@ -2927,13 +2925,11 @@ namespace TestPlant {
 // _.prototype.reverse
 namespace TestReverse {
     {
-        let result: _.LoDashImplicitArrayWrapper<number>;
-        result: _([42]).reverse();
+        let result: _.LoDashImplicitArrayWrapper<number> = _([42]).reverse();
     }
 
     {
-        let result: _.LoDashExplicitArrayWrapper<number>;
-        result: _([42]).chain().reverse();
+        let result: _.LoDashExplicitArrayWrapper<number> = _([42]).chain().reverse();
     }
 }
 
@@ -9970,78 +9966,63 @@ namespace TestCallback {
 // _.constant
 namespace TestConstant {
     {
-        let result: () => number;
-        result: _.constant<number>(42);
+        let result: () => number = _.constant<number>(42);
     }
 
     {
-        let result: () => string;
-        result: _.constant<string>('a');
+        let result: () => string = _.constant<string>('a');
     }
 
     {
-        let result: () => boolean;
-        result: _.constant<boolean>(true);
+        let result: () => boolean = _.constant<boolean>(true);
     }
 
     {
-        let result: () => string[];
-        result: _.constant<string[]>(['a']);
+        let result: () => string[] = _.constant<string[]>(['a']);
     }
 
     {
-        let result: () => {a: string};
-        result: _.constant<{a: string}>({a: 'a'});
+        let result: () => {a: string} = _.constant<{a: string}>({a: 'a'});
     }
 
     {
-        let result: _.LoDashImplicitObjectWrapper<() => number>;
-        result: _(42).constant<number>();
+        let result: _.LoDashImplicitObjectWrapper<() => number> = _(42).constant<number>();
     }
 
     {
-        let result: _.LoDashImplicitObjectWrapper<() => string>;
-        result: _('a').constant<string>();
+        let result: _.LoDashImplicitObjectWrapper<() => string> = _('a').constant<string>();
     }
 
     {
-        let result: _.LoDashImplicitObjectWrapper<() => boolean>;
-        result: _(true).constant<boolean>();
+        let result: _.LoDashImplicitObjectWrapper<() => boolean> = _(true).constant<boolean>();
     }
 
     {
-        let result: _.LoDashImplicitObjectWrapper<() => string[]>;
-        result: _(['a']).constant<string[]>();
+        let result: _.LoDashImplicitObjectWrapper<() => string[]> = _(['a']).constant<string[]>();
     }
 
     {
-        let result: _.LoDashImplicitObjectWrapper<() => {a: string}>;
-        result: _({a: 'a'}).constant<{a: string}>();
+        let result: _.LoDashImplicitObjectWrapper<() => {a: string}> = _({a: 'a'}).constant<{a: string}>();
     }
 
     {
-        let result: _.LoDashExplicitObjectWrapper<() => number>;
-        result: _(42).chain().constant<number>();
+        let result: _.LoDashExplicitObjectWrapper<() => number> = _(42).chain().constant<number>();
     }
 
     {
-        let result: _.LoDashExplicitObjectWrapper<() => string>;
-        result: _('a').chain().constant<string>();
+        let result: _.LoDashExplicitObjectWrapper<() => string> = _('a').chain().constant<string>();
     }
 
     {
-        let result: _.LoDashExplicitObjectWrapper<() => boolean>;
-        result: _(true).chain().constant<boolean>();
+        let result: _.LoDashExplicitObjectWrapper<() => boolean> = _(true).chain().constant<boolean>();
     }
 
     {
-        let result: _.LoDashExplicitObjectWrapper<() => string[]>;
-        result: _(['a']).chain().constant<string[]>();
+        let result: _.LoDashExplicitObjectWrapper<() => string[]> = _(['a']).chain().constant<string[]>();
     }
 
     {
-        let result: _.LoDashExplicitObjectWrapper<() => {a: string}>;
-        result: _({a: 'a'}).chain().constant<{a: string}>();
+        let result: _.LoDashExplicitObjectWrapper<() => {a: string}> = _({a: 'a'}).chain().constant<{a: string}>();
     }
 }
 

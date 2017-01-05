@@ -4,18 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "koa-compose": ["koa-compose/v2"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "mousetrap-tests.ts",
-        "mousetrap-global-bind-tests.ts"
+        "koa-compose-tests.ts"
     ]
 }

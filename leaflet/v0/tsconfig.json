@@ -3,19 +3,21 @@
         "module": "commonjs",
         "target": "es6",
         "noImplicitAny": true,
-        "noImplicitThis": true,
+        "noImplicitThis": false,
         "strictNullChecks": false,
-        "baseUrl": "../",
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "leaflet": ["leaflet/v0"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "mousetrap-tests.ts",
-        "mousetrap-global-bind-tests.ts"
+        "leaflet-tests.ts"
     ]
 }

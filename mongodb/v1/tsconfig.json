@@ -4,18 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "mongodb": ["mongodb/v1"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "mousetrap-tests.ts",
-        "mousetrap-global-bind-tests.ts"
+        "mongodb-tests.ts"
     ]
 }
