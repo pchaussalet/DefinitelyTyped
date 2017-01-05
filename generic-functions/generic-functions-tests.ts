@@ -1,5 +1,3 @@
-/// <reference path="generic-functions.d.ts" />
-
 import g = require('generic-functions');
 
 var tvShow: Object = {

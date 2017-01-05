@@ -3,19 +3,21 @@
         "module": "commonjs",
         "target": "es6",
         "noImplicitAny": true,
-        "noImplicitThis": true,
+        "noImplicitThis": false,
         "strictNullChecks": false,
-        "baseUrl": "../",
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "ember": ["ember/v0"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "format-unicorn-tests.ts",
-        "format-unicorn-safe-tests.ts"
+        "ember-tests.ts"
     ]
 }

@@ -6,10 +6,6 @@
 /// <reference types="jquery"/>
 /// <reference types="handlebars"/>
 
-/* this is an older file, do not lint */
-/* tslint:disable */
-declare var Handlebars: HandlebarsStatic;
-
 declare namespace EmberStates {
 
     interface Transition {

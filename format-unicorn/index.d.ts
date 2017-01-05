@@ -3,10 +3,11 @@
 // Definitions by: kruncher <https://github.com/kruncher/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-interface String {
-  formatUnicorn(replacements: { }): string;
+declare global {
+  interface String {
+    formatUnicorn(replacements: {}): string;
+  }
 }
 
-declare module "format-unicorn" {
-
-}
+declare var isModule: undefined;
+export = isModule;

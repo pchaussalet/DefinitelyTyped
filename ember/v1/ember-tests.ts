@@ -1,4 +1,3 @@
-/// <reference path="ember-1.11.3.d.ts" />
 /// <reference types="handlebars" />
 
 
