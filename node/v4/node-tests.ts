@@ -1,4 +1,3 @@
-/// <reference path="node-4.d.ts" />
 import * as assert from "assert";
 import * as fs from "fs";
 import * as events from "events";
@@ -700,7 +699,7 @@ namespace readline_tests {
         result = readline.createInterface(input, output, completer, terminal);
         result = readline.createInterface({
              input: input,
-             completer: function(str: string): readline.CompleteResult {
+             completer: function(str: string): readline.CompleterResult {
                  return [['test'], 'test'];
              }
          });
