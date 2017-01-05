@@ -4,18 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
-        "experimentalDecorators": true,
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "ion.rangeslider": ["ion.rangeslider/v0"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "inversify-devtools-tests.ts"
+        "ion.rangeslider-tests.ts"
     ]
 }

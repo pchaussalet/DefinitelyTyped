@@ -1,5 +1,3 @@
-/// <reference path="hashmap-1.1.d.ts"/>
-
 var map : HashMap<string, number> = new HashMap<string, number>();
 
 map.set("foo", 123);

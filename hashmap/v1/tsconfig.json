@@ -4,18 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
-        "experimentalDecorators": true,
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "hashmap": ["hashmap/v1"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "inversify-devtools-tests.ts"
+        "hashmap-tests.ts"
     ]
 }
