@@ -1242,7 +1242,7 @@ export declare class Request extends Events.EventEmitter {
         /** a string or an array of strings (e.g. ['error', 'database', 'read']) used to identify the event. Tags are used instead of log levels and provide a much more expressive mechanism for describing and filtering events.*/
         tags: string | string[],
         /** an optional message string or object with the application data being logged.*/
-        data?: string,
+        data?: any,
         /**  an optional timestamp expressed in milliseconds. Defaults to Date.now() (now).*/
         timestamp?: number): void;
     /** request.getLog([tags], [internal])
