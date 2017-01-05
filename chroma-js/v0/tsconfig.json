@@ -4,19 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "baseUrl": "../",
+        "strictNullChecks": true,
+        "baseUrl": "../../",
         "typeRoots": [
-            "../"
+            "../../"
         ],
         "types": [],
+        "paths": {
+            "chroma-js": ["chroma-js/v0"]
+        },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "Utils.d.ts",
-        "Validation.d.ts",
-        "business-rules-engine-tests.ts"
+        "chroma-js-tests.ts"
     ]
 }

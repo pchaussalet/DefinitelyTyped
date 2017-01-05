@@ -3,7 +3,7 @@
 // Definitions by: Morgan Benton <https://github.com/morphatic/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference types="d3" />
+import * as d3 from "d3";
 
 declare namespace d3kit {
 
@@ -150,6 +150,5 @@ declare namespace d3kit {
 
 }
 
-declare module 'd3kit' {
-    export = d3kit;
-}
+export = d3kit;
+export as namespace d3kit;
